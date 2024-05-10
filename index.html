@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="container mt-5">
+            <div class="row">
+              <div class="col">
+              </div>
+              <div class="col-8">
+                <div class="card">
+                    <div class="card-header">
+                      Betplay Karol
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Registro de equipos</h5>
+                      <p class="card-text">todos los equipos en un mismo lugar Betplay</p>
+                      <form class="row g-3" id="frmteam">
+                        <div class="col-md-6">
+                          <label for="nombreEquipo" class="form-label">Nombre del Equipo</label>
+                          <input type="text" class="form-control" name="nombreEquipo" id="nombreEquipo">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="logoEquipo" class="form-label">Logo del Equipo</label>
+                          <input type="text" class="form-control" name="logoEquipo" id="logoEquipo">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="ciudadEquipo" class="form-label">Ciudad</label>
+                          <select name="ciudadEquipo" id="ciudadEquipo" class="form-select">
+                            <option selected>Selecciona una ciudad</option>
+                          </select>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="nombreTecnico" class="form-label">Nombre del tecnico</label>
+                          <input type="text" class="form-control" name="nombreTecnico" id="nombreTecnico">
+                        </div>
+                        <div class="col-12">
+                          <div class="card border-primary mb-3">
+                            <div class="card-header">Jugadores</div>
+                            <div class="card-body text-primary">
+                              <h5 class="card-title">Añadir Jugadores</h5>
+                              <p class="card-text">Aquí podras añadir los jugadores de tu plantel deportivo.</p>
+                              <button type="button" class="btn btn-warning" id="addPlayer">+</button>
+                              <div class="container div-detail-player">
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary " id="addPlantilla">Sign in</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+              </div>
+            </div>
+          </div>
+    </div>
+</body>
+</html>
